@@ -1,5 +1,6 @@
-- name: Add user
-  user:
-    name: test-01
-    group: test-01
-    state: present
+- name: Hello World Sample
+  hosts: all
+  tasks:
+    - name: Hello Message
+      debug:
+        msg: "Hello World!"
